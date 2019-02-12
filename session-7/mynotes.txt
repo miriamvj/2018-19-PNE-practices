@@ -1,0 +1,41 @@
+Here you will take your notes.
+client = c, a model for communicating the proyect
+s = server, another program.
+we want to communicate both programs. This model is known as SERVER-CLIENT model.
+The client starts the communication by sending a message to the server, the server has a request, which is the message that the server has previously send and it makes a response.
+On the internet there could be another client who also wants info or a service. So there could be many clients.
+If we do not have a client it does not happen nothing, it will continue be waiting until any client connect to the server. On the other hand it is more problematic
+cause the client is asking for info and there is none on the other side. A SERVER IS ALWAYS NEEDED.
+This programs are running inside a computer(in a general way; it could be any device with a controller such as mobiles, tablets...). In this devices we have many programs.
+When we are testing this client apps we do not need to compute them in order to test them.
+
+Both the client and the server are connected through internet, which have been designed in order to show that this communication  is really easy, however, this is not so easy.
+Inside the internet there are many isolated computers that are connected and divided in groups called networks. I f we want to send a message from the client to the server, first we have to
+identify the network we are in. This is called IP address, it is an address that can change depending on what computer you are connected to.
+The NETWORK interface (look for it).
+There is a command called PING to ask the computer if it is alive, it is mandatory to answer it.
+URL: UNIVERSAL RESOURCE CONNECTOR (identifying an IP address for humans)
+To communicate with any computer we need the IP address; in the same computer there can be many apps, to connect with any of them we use another number that is called the PORT.
+The servers are usually connected to the port 80. We should use the IP and the port to communicate with any server. Without hose numbers we can not connect.
+
+
+*My phone IP address at URJC is: 10.0.54.66
+*My computer IP address is: inet 212.128.253.75
+*Teacher's IP address is: 212.128.253.64
+*ping time to 8.8.8.8:
+    time=3.52 ms
+*ping to my computer:
+    time=0.051 ms
+*ping to 212.128.253.76 (classmate):
+    time=0.455 ms
+*ping to my mobile phone:
+    time=26.1 ms
+*ping to www.google.com:
+    its IP address is 216.58.214.164
+    and the time spent is:  time=3.52 ms
+*pint to pur university:
+    its IP address is 212.128.240.50
+
+
+
+This is an example for adding to my file.This is an example for adding to my file.
