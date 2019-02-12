@@ -15,7 +15,7 @@ class Gene(Seq):
         inheritage the methods from Seq Class"""
     pass
 
-s1 = Gene(Seq('ATTCGATCC'))
+s1 = Gene('ATTCGATCC')
 s2 = Seq('AAAGG')
 
 str1 = s1.strbases
