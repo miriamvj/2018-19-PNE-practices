@@ -4,10 +4,10 @@ import socket
 # Create a socket for communicating with the server
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print('Socket created')
-PORT = 8080
+PORT = 8082
 IP = "212.128.253.64"
 s.connect((IP, PORT))
-s.send(str.encode('Hello'))
+s.send(str.encode('irene'))
 msg = s.recv(2048).decode('utf-8')
 print('Message from the server')
 print(msg)
