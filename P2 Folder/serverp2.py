@@ -1,7 +1,7 @@
 import socket
 
 # Configure the Server's IP and PORT
-PORT = 8083
+PORT = 8085
 IP = "212.128.253.80"
 MAX_OPEN_REQUESTS = 5
 
@@ -31,12 +31,16 @@ try:
         msg = clientsocket.recv(2048).decode("utf-8")
         print("Message from client: {}".format(msg))
 
-        # Send the messag
-        message = "Hello from your own server"
-        send_bytes = str.encode(message)
+        # Send the message
+        from Seq import Seq
+        s1 = Seq(msg)
+        s2 = s1.complement()
+        send_bytes = str.encode(s2)
         # We must write bytes, not a string
         clientsocket.send(send_bytes)
         clientsocket.close()
+
+
 
 except socket.error:
     print("Problems using port {}. Do you have permission?".format(PORT))
