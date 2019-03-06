@@ -1,7 +1,7 @@
 import http.server
 import socketserver
 
-PORT = 8003
+PORT = 8004
 
 # Request line rpints the first line
 
@@ -13,14 +13,21 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         print(' Cmd:' + self.command)
         print(' Path:' + self.path)
 
-        content = 'I  am your passed in Algebra!.'
+        if self.path == '/':
+            with open('index.html', 'r') as f:
+                contents = f.read()
+        else:
+            with open ('error.html', 'r') as f:
+                contents = f.read()
+
         self.send_response(200)
-        self.send_header('Content-Type', 'text/plain')
-        self.send_header('Content.Length', len(str.encode(content)))
+        self.send_header('Content-Type', 'text/html')
+        self.send_header('Content.Length', len(str.encode(contents)))
         self.end_headers()
 
-        self.wfile.write(str.encode(content))
+        self.wfile.write(str.encode(contents))
         return
+
 
 
 Handler = TestHandler
