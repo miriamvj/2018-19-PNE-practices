@@ -1,0 +1,11 @@
+{
+  "First name": "Esther",
+  "Last name": "Enríquez",
+  "Age": 2,
+  "Phone number": [
+    {"number": "11111", "type": "home"},
+    {"number":  "22222", "type":  "mobile"},
+
+    "69696-69696","666-666"]
+
+}
